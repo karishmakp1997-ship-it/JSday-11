@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Day-11</title>
+    <link rel="stylesheet" href="mini2.css">
+    <link rel="stylesheet" href="mini2.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Expense Tracker</h2>
+
+        <div class="input-group">
+            <input type="text" id="expenseName" placeholder="Expense Name">
+            <input type="number" id="expenseAmount" placeholder="Amount">
+            <button onclick="addExpense()">Add</button>
+        </div>
+
+        <h3>Expenses</h3>
+
+        <table id="expenseTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Amount</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="expenseList"></tbody>
+        </table>
+
+        <div class="total-box">Total: ₹<span id="totalAmount">0</span></div>
+        <button class="clear-btn" onclick="clearAll()">Clear All</button>
+    </div>
+    <script src="mini2.js"></script>
+</body>
+
+</html>
